@@ -4,10 +4,10 @@ import { ResourcePicker, TitleBar } from '@shopify/app-bridge-react';
 
 class Index extends React.Component {
 
+  state = { open: false }
+
   render() {
-    state = { open: false,
-      value: '',
-    }
+    
     return (
       <Page
         title="Product Selector"
@@ -35,11 +35,7 @@ class Index extends React.Component {
     console.log(resources);
   };
 
-  handleChange = (value) => {
-
-    this.setState({ value: event.target.value });
   
-}
 
 }
 
