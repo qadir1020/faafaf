@@ -2,11 +2,21 @@
 import { Page, Layout, EmptyState, Button, Card, TextField } from "@shopify/polaris";
 import { ResourcePicker, TitleBar } from '@shopify/app-bridge-react';
 
+
+
+
 class Index extends React.Component {
 
+  constructor(props) {
+    super(props);
+      this.state={
+        // enter code here
+        open: false,
+        value: ''
+       }
+  }
   render() {
-     state = { open: false,value: '',
-    }
+  
     return (
       <Page
         title="Product Selector"
@@ -25,10 +35,10 @@ class Index extends React.Component {
           /> */}
 
         <TextField
-          label="Store name"
-          value={value}
+          label="Email"
+          value={this.state.value}
           onChange={(value) => { this.handleChange(value) }}
-          autoComplete="off"
+          autoComplete="on"
         />
 
       </Page>
@@ -45,7 +55,9 @@ class Index extends React.Component {
     this.setState({ value: event.target.value });
     console.log(value);
   
-}
+  }
+
+ 
 
 }
 
