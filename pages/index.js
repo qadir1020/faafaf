@@ -28,7 +28,7 @@ class Index extends React.Component {
         <TextField
           label="Store name"
           value={value}
-          onChange={handleChange}
+          onChange={(value) => { this.handleChange(value) }}
           autoComplete="off"
         />
 
@@ -44,6 +44,7 @@ class Index extends React.Component {
   handleChange = (value) => {
 
     this.setState({ value: event.target.value });
+    console.log(value);
   
 }
 
