@@ -5,8 +5,7 @@ import { ResourcePicker, TitleBar } from '@shopify/app-bridge-react';
 class Index extends React.Component {
 
   render() {
-    state = { open: false,
-      value: '',
+     state = { open: false,value: '',
     }
     return (
       <Page
