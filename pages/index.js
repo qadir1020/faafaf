@@ -1,5 +1,5 @@
 
-import { Page, Layout, EmptyState, Button, Card } from "@shopify/polaris";
+import { Page, Layout, EmptyState, Button, Card,TextField } from "@shopify/polaris";
 import { ResourcePicker, TitleBar } from '@shopify/app-bridge-react';
 
 class Index extends React.Component {
