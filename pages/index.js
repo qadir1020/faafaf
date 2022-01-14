@@ -4,8 +4,9 @@ import { ResourcePicker, TitleBar } from '@shopify/app-bridge-react';
 
 class Index extends React.Component {
 
+  state = { open: false}
   render() {
-    state = { open: false}
+   
     return (
       <Page
         title = "Product Selector"
